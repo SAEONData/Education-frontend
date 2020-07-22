@@ -16,18 +16,18 @@
     </head>
 
 <body <?php body_class(); ?>>
-	<header class="deu-header" role="banner">
-		<hgroup>
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-icon.png " />
-		<span><strong>SAEON Education Outreach<?php bloginfo( 'title' ); ?></strong><br />Environmental Science<?php bloginfo( 'description' ); ?></span>
-		</hgroup>
+	<header class="edu-header" role="banner">
 
-		<nav id="navigation" role="navigation">
+		<nav id="cssmenu" role="navigation">
+		<div class="logo"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo.png " /><a href="./"><strong><?php bloginfo( 'title' ); ?></strong><br /><?php bloginfo( 'description' ); ?></a></div>
+		<div id="head-mobile"></div>
+		<div class="button"></div>
 			<?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'primary-menu',
-                    'depth'           => 2
+					'depth'           => 2,
+					'container'           => false
 				)
 			);
 			?>
