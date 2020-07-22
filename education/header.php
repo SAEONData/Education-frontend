@@ -17,16 +17,20 @@
 
 <body <?php body_class(); ?>>
 	<header class="edu-header" role="banner">
+		<div class="logo"><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo.png " /></a></div>
+		<a href="<?php echo get_home_url(); ?>" id="edu-title"><strong><?php bloginfo( 'title' ); ?></strong>
+		<?php bloginfo( 'description' ); ?></a>
 
 		<nav id="cssmenu" role="navigation">
-		<div class="logo"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo.png " /><a href="./"><strong><?php bloginfo( 'title' ); ?></strong><br /><?php bloginfo( 'description' ); ?></a></div>
+		
+	
 		<div id="head-mobile"></div>
 		<div class="button"></div>
 			<?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'primary-menu',
-					'depth'           => 2,
+					'depth'           => 3,
 					'container'           => false
 				)
 			);

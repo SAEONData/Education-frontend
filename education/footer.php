@@ -30,7 +30,14 @@
     </div>
     <div class="edu-bg-dark">
     <div class="edu-container">
-        <p>Copyright <?php echo date("Y"); ?> SAEON Education Outreach</p>
+        <div class="edu-row">
+            <div class="edu-col-md-6">
+            <p>Copyright <?php echo date("Y"); ?> SAEON | Education Outreach</p>
+            </div>
+            <div class="edu-col-md-6 txt-right">
+            <p>Powered by <a href="http://www.saeon.ac.za/" target="_blank">SAEON</a></p>
+            </div>
+         </div>
     </div>
     </div>
 
