@@ -26,7 +26,7 @@ body{
   padding-top: 128px;
 }
 #edu-title,.edu-header,.logo img,
-#cssmenu,#cssmenu a,.img-wht{
+#cssmenu,#cssmenu a,.img-wht,.edu-image,.btn.edu-btn{
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
@@ -56,6 +56,100 @@ body .elementor-widget-button .elementor-button:hover {
   background-color: #4573b2;
   border: 2px solid #4573b2;
 }
+body .elementor-widget-image-box .elementor-image-box-content .elementor-image-box-title,
+body .elementor-widget-heading .elementor-heading-title {
+  color: #5987c6;
+}
+@media only screen and (min-width: 769px) {
+h1.elementor-heading-title{
+  font-size: 48px;
+}
+}
+/* Image box */
+.edu-img-boxes .elementor-image-box-img{
+  overflow: hidden;
+  height: 230px;
+}
+@media only screen and (min-width: 769px) {
+  .edu-img-boxes .elementor-image-box-description{
+      height: 185px;
+  }
+}
+/* News */
+.edu-image {
+  display: block;
+  height: 190px;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(https://education.saeon.ac.za/wp-content/themes/education/img/logo.png );
+  background-color: #f0f0f0;
+}
+.edu-image:hover {
+  background-size: 105%;
+}
+.edu-wrapper{
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.edu-newslist h4 a{
+  color: #7a7a7a;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 100;
+}
+.edu-newslist h4{
+  margin: 10px 0;
+}
+.edu-date{
+  color: #5987c6;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.btn.edu-btn{
+  background: #5987c6;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 26px;
+  border-radius: 3px;
+  font-size: 14px;
+  display: inline-block;
+}
+.btn.edu-btn:hover{
+  background: #4573b2;
+}
+.edu-excerpt{
+  color: #7a7a7a;
+}
+/* Gallery */
+.elementor-slideshow__header.elementor-lightbox-prevent-close{
+  background: transparent;
+}
+
+@media only screen and (min-width: 769px) {
+.edu-gallery .swiper-slide-image{
+  width: auto;
+    min-height: 238px;
+    max-width: 200%;
+    min-width: 100%;
+}
+.elementor-slideshow__header>i.eicon-share-arrow{
+  margin-right: 70px;
+}
+.edu-gallery .elementor-widget-image-carousel .swiper-container {
+  position: static;
+  height: 300px;
+}
+.swiper-slide a{
+  color: #7a7a7a;
+}
+.swiper-slide a:hover{
+  color: #5987c6;
+}
+}
 /* grid */
 .edu-container {
   margin: 0 auto;
@@ -70,13 +164,15 @@ body .elementor-widget-button .elementor-button:hover {
   margin-right: -15px;
   margin-left: -15px;
 }
-.edu-col, .edu-col-md-4, .edu-col-md-3,.edu-col-md-6 {
+.edu-col, .edu-col-md-4, .edu-col-md-3,.edu-col-md-6,.edu-col-md-8 {
   position: relative;
   min-height: 1px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 15px;
+    padding-right: 15px;
 }
 @media only screen and (min-width: 769px) {
   .edu-container {
@@ -87,10 +183,20 @@ body .elementor-widget-button .elementor-button:hover {
     flex: 0 0 25%;
     max-width: 25%;
   }
+  .edu-col-md-4{
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
   .edu-col-md-6{
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+  }
+  .edu-col-md-8{
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.6666670%;
+    max-width: 66.666667%;
   }
 }
 @media only screen and (min-width: 992px) {
