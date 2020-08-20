@@ -18,7 +18,7 @@
 <body <?php body_class(); ?>>
 	<header class="edu-header" role="banner">
 		<div class="logo"><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo.png " /></a></div>
-		<a href="<?php echo get_home_url(); ?>" id="edu-title"><strong><?php bloginfo( 'title' ); ?></strong>
+		<a href="<?php echo get_home_url(); ?>" id="edu-title"><strong><span class="display-desktop">SAEON </span>Education Outreach</strong>
 		<?php bloginfo( 'description' ); ?></a>
 
 		<nav id="cssmenu" role="navigation">

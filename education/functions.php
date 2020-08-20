@@ -53,5 +53,7 @@ if ( function_exists('register_sidebar') ) {
     'after_title' => '</h2>'
     ));
 };
+
+//add featured image support
 add_theme_support( 'post-thumbnails' );
 
